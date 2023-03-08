@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.min.css" />
-  </head>
-  <body>
-    <header class="header">
-        <div class="container">
-            <button type="button" >menu</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <button type="button" data-open-menu>menu</button>
       <ul class="header-list">
-        <li >
+        <li>
           <a href="">Головна</a>
         </li>
         <li>
@@ -26,14 +28,43 @@
         </li>
       </ul>
     </div>
-    </header>
-    <section>
-        <div class="container">
-        <h1>Заголовок</h1>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quidem laborum, illum nam accusantium doloribus architecto corporis sequi vel quo est hic adipisci aliquam minima accusamus tempora doloremque voluptatibus harum!</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus totam, debitis atque numquam fugiat nulla esse accusantium eaque voluptatem doloribus explicabo quaerat aut officiis, voluptates aliquid quas rerum, et natus.</p>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quidem incidunt tempore earum molestiae dignissimos facere ullam! Id et omnis dolorum illum rem a, tenetur voluptas excepturi at, perspiciatis commodi.</p>
-        </div>
-    </section>
-  </body>
+  </header>
+  <section>
+    <div class="container">
+      <h1>Заголовок</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quidem laborum, illum nam accusantium doloribus
+        architecto corporis sequi vel quo est hic adipisci aliquam minima accusamus tempora doloremque voluptatibus
+        harum!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus totam, debitis atque numquam fugiat nulla
+        esse accusantium eaque voluptatem doloribus explicabo quaerat aut officiis, voluptates aliquid quas rerum, et
+        natus.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quidem incidunt tempore earum molestiae
+        dignissimos facere ullam! Id et omnis dolorum illum rem a, tenetur voluptas excepturi at, perspiciatis commodi.
+      </p>
+    </div>
+  </section>
+  <div class="overlay is-hidden" data-overlay>
+    <div class="menu">
+      <button type="button" data-close-menu>
+        X
+      </button>
+      <ul class="menu-list">
+        <li>
+          <a href="">Головна</a>
+        </li>
+        <li>
+          <a href="">Галерея</a>
+        </li>
+        <li>
+          <a href="">Новини</a>
+        </li>
+        <li>
+          <a href="">Контакти</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/menu.js" type="module"></script>
+</body>
+
 </html>
