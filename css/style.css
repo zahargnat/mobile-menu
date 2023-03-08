@@ -1,0 +1,76 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h2, p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  outline: solid red;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: deeppink;
+}
+@media screen and (min-width: 400px) {
+  .container {
+    width: 400px;
+    background-color: aqua;
+  }
+}
+@media screen and (min-width: 750px) {
+  .container {
+    width: 750px;
+    background-color: coral;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    width: 900px;
+    background-color: crimson;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    background-color: chartreuse;
+  }
+}
+
+header, section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  outline: solid blue;
+}
+
+.header-list {
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 100px;
+}
+@media screen and (min-width: 750px) {
+  .header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+button {
+  display: block;
+  margin-left: auto;
+}
+@media screen and (min-width: 750px) {
+  button {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
